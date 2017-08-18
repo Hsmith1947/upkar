@@ -1,0 +1,143 @@
+{% extends 'layout.njk' %}
+
+{% block body %}
+
+<div class="banner">
+	<h3>Teach students how</h3>
+	<h2><span>To </span>learn</h2>
+	<h4>Our goal is to transform them</h4>
+	<div class="arrow">
+		<a href="#contact" class="scroll"><img src="images/arrow.png" alt=" " /></a>
+	</div>
+</div>
+
+<!-- about -->
+<div class="about-w3-agile" id="about">
+	<div class="container">
+		<div class="wthree_about_grids">
+			<div class="col-md-6 wthree_about_grid_left">
+				<h3>About us</h3>
+				<p>Bishop Rolly Singh and his wife Salomi Singh started Upkar Project
+
+				</p>
+
+				<a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+			</div>
+			<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Founder of Upkar</h4>
+						</div>
+						<div class="modal-body">
+							<p>Rolly comes from a humble background, he lost his parents at an early age
+								but by God’s grace persevered to complete his schooling and to eventually get his Aeronautical
+								technical training from I.T.I. Dehradun. In 1972 he began working at Hindustan Aeronautics
+								Limited, Lucknow and soon after met a Christian who shared the gospel with him and on that
+								day he trusted in Christ for the forgiveness of sins and eternal life. He soon became
+								an active member of a church in Lucknow.</p>
+								<p>Quickly, Christ’s love for Rolly in the face of his own life challenges and difficulties and how the Lord helped and sustained him in all that, compelled him to love others like his Saviour. He got involved in various activities in his church, and eventually resigned in 1979 from his job to move to Barabanki along with his wife Aunty Salomi to serve God and people with the love of Christ. Over time they both began to help people with their spiritual, mental, physical and social needs. This led them to start Zion Sewa in 2001 to help people to this end.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 wthree_about_grid_right">
+					<img src="img/upkar/IMG_3643.jpg" alt=" " class="img-responsive" />
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+	<div class="featured-work">
+		<div class="container">
+			<h3>Vision & Mission</h3>
+			<div class="col-md-6 featured-left">
+				<div class="wmuSlider example1 animated wow slideInUp" data-wow-delay=".5s">
+					<div class="wmuSliderWrapper">
+						<article style="position: absolute; width: 100%; opacity: 0;">
+							<div class="banner-wrap">
+								<img src="img/kid-3.jpg" alt=" " class="img-responsive" />
+							</div>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;">
+							<div class="banner-wrap">
+								<img src="img/kid-4.jpg" alt=" " class="img-responsive" />
+							</div>
+						</article>
+						<article style="position: absolute; width: 100%; opacity: 0;">
+							<div class="banner-wrap">
+								<img src="img/kid-5.jpg" alt=" " class="img-responsive" />
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+			<script src="js/jquery.wmuSlider.js"></script>
+			<script>
+				$('.example1').wmuSlider();
+			</script>
+
+			<div class="col-md-6 featured-right">
+				<p>"To develop rural children in an integrated manner enabling them to stand
+					with other children across the globe<br>
+					To develop their lives (physical, spiritual, mental and social) -Luke 2:52</p>
+					<p>The Upkar project provides high-quality education to rural children in an integrated manner.
+						We aim to give them equal opportunities to learn as others, supported by the best of learning tools and environment.
+						So that they go on to become change makers by breaking the vicious cycle of poverty,
+						illiteracy, and improper hygiene and sanitation; allowing the students to contribute towards India’s transformation
+						so that children can be transformed in their personal, work, society and physical life enabling them to contribute
+						towards India’s transformation.</p>
+						<p>So that children can be transformed in their personal, work, society and physical life enabling
+							them to contribute towards India’s transformation</p>
+						</div>
+						<div class="clearfix">
+						</div>
+					</div>
+				</div>
+				<div class="feat-bottom">
+					<h4>THE PURPOSE OF EDUCATION IS TO MAKE MINDS NOT CAREERS</h4>
+				</div>
+
+
+
+				<!--Featured Section-->
+				<section id="features" class="features bg-white">
+					<div class="container">
+						<div class="row">
+							<div class="main_features fix roomy-70">
+
+								<div class="col-md-6 col-md-offset-1 sm-m-top-50">
+									<div class="features_item2_area">
+										<div class="features_item2 text-center">
+											<div class="divider_horizontal"></div>
+											<div class="divider_vertical"></div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- End off row -->
+					</div><!-- End off container -->
+				</section><!-- End off Featured Section-->
+
+				<!-- Gallery -->
+				<div class="gallery" id="gallery">
+					<div class="container">
+						<h3>GALLERY</h3>
+						<div class="gallery-grids">
+							{% include 'layouts/gallery.njk' %}
+						</div>
+
+					</div>
+				</div>
+				<!-- //Gallery -->
+
+
+				{% include 'layouts/footer.njk' %}
+				{% endblock %}
